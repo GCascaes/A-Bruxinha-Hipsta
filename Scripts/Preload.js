@@ -9,7 +9,7 @@ function preload() {
 
     imagemTelaInicial = loadImage('Assets/Images/Backgrounds/StartMenu.png');
     imagemCenario = loadImage('Assets/Images/Backgrounds/Forest.png');
-    imagemGameOver = loadImage('Assets/Images/HUD/game-over.png');
+    imagemGameOver = loadImage('Assets/Images/HUD/Game-Over.png');
 
     fonteTelaInicial = loadFont('Assets/Fonts/StartMenuFont.otf');
 
