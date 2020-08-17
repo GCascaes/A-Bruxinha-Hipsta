@@ -1,4 +1,4 @@
-class Pontuacao{
+class Score{
   constructor(){
     this.pontos = 0;
   }

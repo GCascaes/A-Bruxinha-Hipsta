@@ -1,4 +1,4 @@
-class Vida {
+class Health {
   constructor(total, inicial) {
     this.total = total;
     this.inicial = inicial;

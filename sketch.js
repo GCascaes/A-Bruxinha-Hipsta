@@ -4,19 +4,21 @@ function setup() {
   
   frameRate(30);
   
-  telaInicial = new TelaInicial();
-  jogo = new Jogo();
+  telaInicial = new StartMenu();
+  jogo = new Game();
   
   telaInicial.setup();
   jogo.setup();
-  
-  cenas = {
+
+    cenaAtual = 'telaInicial';
+
+  gameScenes = {
     telaInicial,
     jogo,
     gameOver: () => console.log('game over'),
   };
   
-  //botaoGerenciador = new BotaoGerenciador('Iniciar', width/2, height/2);
+  botaoGerenciador = new SceneButton('Iniciar', width/2, height/2);
 }
 
 function keyPressed() {
@@ -24,5 +26,5 @@ function keyPressed() {
 }
 
 function draw() {
-  cenas[cenaAtual].draw();
+  gameScenes[cenaAtual].draw();
 }

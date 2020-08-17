@@ -1,11 +1,11 @@
-let cenas;
+let gameScenes;
 
 let telaInicial;
 let jogo;
 let vida;
-let fita;
+let config;
 
-let cenaAtual = 'jogo';
+let cenaAtual;
 
 let imagemPersonagem;
 let imagemInimigo;

@@ -1,11 +1,11 @@
-class BotaoGerenciador{
+class SceneButton{
   constructor(texto, x, y){
     this.texto = texto;
     this.x = x;
     this.y = y;
     
     this.botao = createButton(this.texto);
-    this.botao.mousePressed(() => this._alteraCena());
+      this.botao.mousePressed(() => this._changeScene());
     this.botao.addClass('botao-tela-inicial');
   }
   
@@ -14,7 +14,7 @@ class BotaoGerenciador{
     this.botao.center('horizontal');
   }
   
-  _alteraCena(){
+  _changeScene(){
     this.botao.remove();
     cenaAtual = 'jogo';
   }

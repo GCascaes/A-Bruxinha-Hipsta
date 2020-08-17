@@ -1,4 +1,4 @@
-class Animacao {
+class Animation {
   constructor(matriz, imagem, x, variacaoY, largura, altura, larguraSprite, alturaSprite) {
     this.matriz = matriz;
     this.imagem = imagem;

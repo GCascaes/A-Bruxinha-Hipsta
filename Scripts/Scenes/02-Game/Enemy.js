@@ -1,4 +1,4 @@
-class Inimigo extends Animacao{
+class Enemy extends Animation{
   constructor(matriz, imagem, x, variacaoY, largura, altura, larguraSprite, alturaSprite, velocidade){
     super(matriz, imagem, x, variacaoY, largura, altura, larguraSprite, alturaSprite);
     

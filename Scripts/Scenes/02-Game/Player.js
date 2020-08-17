@@ -1,4 +1,4 @@
-class Personagem extends Animacao {
+class Player extends Animation {
   constructor(matriz, imagem, x, variacaoY, largura, altura, larguraSprite, alturaSprite, somPulo) {
     super(matriz, imagem, x, variacaoY, largura, altura, larguraSprite, alturaSprite);
 
@@ -100,17 +100,17 @@ class Personagem extends Animacao {
     const precisaoH = 0.55;
     const precisaoV = 0.85;
 
-    noFill();
-    rect(
-      this.x + this.largura * (1 - precisaoH) / 2,
-      this.y + this.altura * (1 - precisaoV) / 2,
-      this.largura * precisaoH,
-      this.altura * precisaoV);
-    rect(
-      inimigo.x,
-      inimigo.y,
-      inimigo.largura,
-      inimigo.altura);
+    //noFill();
+    //rect(
+    //  this.x + this.largura * (1 - precisaoH) / 2,
+    //  this.y + this.altura * (1 - precisaoV) / 2,
+    //  this.largura * precisaoH,
+    //  this.altura * precisaoV);
+    //rect(
+    //  inimigo.x,
+    //  inimigo.y,
+    //  inimigo.largura,
+    //  inimigo.altura);
 
     const colisao = collideRectRect(
       this.x + this.largura * (1 - precisaoH) / 2,
