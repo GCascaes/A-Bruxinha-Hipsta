@@ -35,10 +35,10 @@ class Player extends Animation {
     if (this.velocidade === 0)
       this.aceleracao = 0;
 
-    if (keyIsDown(RIGHT_ARROW) && !this.estaDepoisDaTela(this.largura/4)) {
+    if ((keyIsDown(RIGHT_ARROW) || keyIsDown("D")) && !this.estaDepoisDaTela(this.largura/4)) {
       this.aceleracao = +this.aceleracaoMaxima;
     }
-    if (keyIsDown(LEFT_ARROW) && !this.estaAntesDaTela(this.largura/4)) {
+    if ((keyIsDown(LEFT_ARROW) || keyIsDown("A")) && !this.estaAntesDaTela(this.largura/4)) {
       this.aceleracao = -this.aceleracaoMaxima;
     }
     
